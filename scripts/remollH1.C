@@ -13,14 +13,14 @@ remollH1::remollH1(Double_t *v, Index_t idx, remollAna *t, Double_t min, Double_
 	if (strcmp(fName,"apv_ee") == 0 ) fNbin = 300;
 	if (strcmp(fName,"apv_ep") == 0 ) fNbin = 200;
 	if (strcmp(fName,"apv_in") == 0 ) fNbin = 400;
-	else if (strcmp(fName,"rad") == 0 ) fNbin = 140;
-	else if (strcmp(fName,"thcom") == 0 ) fNbin = 180;
-	else if (strcmp(fName,"th") == 0 ) fNbin = 100;
-	else if (strcmp(fName,"energy_det") == 0 ) fNbin = 150;
-	else if (strcmp(fName,"q2") == 0 ) fNbin = 150;
-	else if (strcmp(fName,"vert_z0") == 0 ) fNbin = 160;
-	else if (strcmp(fName,"vert_y0") == 0 ) fNbin = 100;
-	else if (strcmp(fName,"vert_x0") == 0 ) fNbin = 100;
+	else if (strcmp(fName,"rad_moller") == 0|| strcmp(fName,"rad_elastic") == 0 || strcmp(fName,"rad_inelastic") == 0 ) fNbin = 140;
+	else if (strcmp(fName,"thcom_moller") == 0 || strcmp(fName,"thcom_elastic") == 0 || strcmp(fName,"thcom_inelastic") == 0 ) fNbin = 180;
+	else if (strcmp(fName,"th_moller") == 0 || strcmp(fName,"th_elastic") == 0 || strcmp(fName,"th_inelastic") == 0 ) fNbin = 100;
+	else if (strcmp(fName,"energy_det_moller") == 0 || strcmp(fName,"energy_det_elastic") == 0 || strcmp(fName,"energy_det_inelastic") == 0 ) fNbin = 150;
+	else if (strcmp(fName,"q2_moller") == 0 || strcmp(fName,"q2_elastic") == 0 || strcmp(fName,"q2_inelastic") == 0 ) fNbin = 150;
+	else if (strcmp(fName,"vert_z0_moller") == 0 || strcmp(fName,"vert_z0_elastic") == 0|| strcmp(fName,"vert_z0_inelastic") == 0 ) fNbin = 160;
+	else if (strcmp(fName,"vert_y0_moller") == 0 || strcmp(fName,"vert_y0_elastic") == 0|| strcmp(fName,"vert_y0_inelastic") == 0 ) fNbin = 100;
+	else if (strcmp(fName,"vert_x0_moller") == 0 || strcmp(fName,"vert_x0_elastic") == 0|| strcmp(fName,"vert_x0_inelastic") == 0 ) fNbin = 100;
 	else if (strcmp(fName,"W2_in") == 0 ) fNbin = 200;
 	else fNbin = 300; //default (just in case)
 
